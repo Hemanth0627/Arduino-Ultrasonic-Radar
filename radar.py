@@ -12,7 +12,7 @@ MAX_DISTANCE_CM = 200
 def main():
     try:
         with serial.Serial(PORT, BAUD_RATE, timeout=1) as arduino:
-            # Opening a serial connection resets many Arduino Uno boards.
+            
             plt.pause(2)
 
             fig, ax = plt.subplots(subplot_kw={"projection": "polar"})
