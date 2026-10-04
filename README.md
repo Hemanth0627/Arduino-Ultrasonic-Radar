@@ -42,3 +42,16 @@ It sends one `angle,distance` pair per line, for example:
 66,6.33
 68,6.24
 ```
+
+## Hardware Connections
+- HC-SR04 VCC → Arduino 5V
+- HC-SR04 TRIG → Arduino digital pin 9
+- HC-SR04 ECHO → Arduino digital pin 10
+- HC-SR04 GND → Arduino GND
+- Servo signal wire (usually orange or yellow) → Arduino digital pin 6
+- Servo power wire (usually red) → regulated 5V supply
+- Servo ground wire (usually brown or black) → supply ground and Arduino GND
+- Connect the Arduino Uno to the laptop with a USB cable. The laptop runs the Python radar program on COM7.
+The external servo supply and Arduino must share a ground connection. The Arduino code uses pins 9, 10, and 6, and sends data at 115200 baud.
+
+
